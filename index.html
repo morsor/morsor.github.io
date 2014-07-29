@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en" id="ng-app" ng-app="morsor.app" ng-controller="SharedResourceController">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title ng-bind-template="{{_.company.shortName | stretch}}"></title>
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.2/css/bootstrap.css" media="screen" />
+  <link rel="stylesheet" href="./css/bootstrap-override.css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-route.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.18/angular-resource.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+  <script src="http://repo.morsor.biz/custom/angularjs/services.js"></script>
+  <script src="http://repo.morsor.biz/custom/angularjs/controllers.js"></script>
+  <script src="./js/app.js"></script>
+  <script src="./js/services.js"></script>
+  <script src="./js/controllers.js"></script>
+  <!--[if lte IE 8]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/json3/3.2.5/json3.min.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="span12">
+        <div id="banner" ng-bind-template="{{_.company.shortName | stretch}}"></div>
+        <div class="row" ng-view></div>
+        <div id="footer">&copy; 2001-{{currentYear}} {{_.company.shortName}}</div>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

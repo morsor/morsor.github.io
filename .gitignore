@@ -1,0 +1,32 @@
+# Extracted from https://github.com/ulrich/macaron-factory/blob/master/.gitignore
+# Ignore all dotfiles...
+.*
+# except for .gitignore
+!.gitignore
+
+# Ignore Play! working directory #
+db
+eclipse
+log
+logs
+precompiled
+tmp
+test-result
+eclipse
+server.pid
+
+# Ignore IntelliJ
+*.iml
+*.ipr
+*.iws
+out
+
+# Ignore Gradle
+build
+gradle
+gradlew
+gradlew.bat
+
+# Ignore Node.js
+web-server.js
+
