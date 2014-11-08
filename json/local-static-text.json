@@ -2,8 +2,8 @@
 
     "current" : {
         "employer" : {
-            "name" : "Nordea (Infrastructure and Operations)",
-            "url" : "http://www.nordea.dk"
+            "name" : "ATP",
+            "url" : "http://www.atp.dk"
         }
     },
 
@@ -29,7 +29,7 @@
     "publicAWSS3Bucket" : "morsor-downloadable",
 
     "technologies"  : "Java/JEE, Spring Framework, JPA/Hibernate, JUnit, REST",
-    "tools"         : "IntelliJ, Gradle, Git(hub), Jenkins, AngularJS, Maven2, Subversion, Eclipse"
+    "tools"         : "IntelliJ, Gradle, Git(hub), Jenkins, AngularJS, Maven, Subversion, Eclipse"
 
 }
 
