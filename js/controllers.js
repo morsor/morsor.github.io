@@ -1,5 +1,13 @@
 'use strict';
 
+function SharedResourceController($scope, LocalStaticText) {
+
+    $scope._ = LocalStaticText.load();
+
+    $scope.currentYear = new Date().getFullYear();
+
+}
+
 var languages = new Array('danish', 'english');
 
 function LanguageVersionedContentController($scope, $location, $routeParams, DanishContent, EnglishContent) {

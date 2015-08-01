@@ -2,7 +2,7 @@
 
 var app = angular.module(
     'morsor.app',
-    ['morsor.danish', 'morsor.english', 'local.static-text', 'local.config', 'ngRoute', 'ngResource']
+    ['morsor.danish', 'morsor.english', 'local.static-text', 'ngRoute', 'ngResource']
 );
 
 

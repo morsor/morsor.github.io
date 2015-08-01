@@ -8,11 +8,11 @@ DK-2300 Copenhagen S<br />
 Denmark<br />
 <br />
 
-email: <a href="mailto:{{_.company.email}}" ng-bind-template="{{_.company.email}}"></a><br />
+email: <a href="mailto:{{_.company.email}}" data-ng-bind-template="{{_.company.email}}"></a><br />
 phone: {{_.company.phone.countryCode}} {{_.company.phone.mobile}}<br />
 <br />
 
-Download CV in <a ng-href="https://s3-eu-west-1.amazonaws.com/{{_.publicAWSS3Bucket}}/cv-morten-sorensen-{{language}}.pdf">PDF</a><br />
+Download CV in <a data-ng-href="https://s3-eu-west-1.amazonaws.com/{{_.publicAWSS3Bucket}}/cv-morten-sorensen-{{language}}.pdf">PDF</a><br />
 <br />
 
 VAT#: DK {{_.company.vatNo}}<br />
