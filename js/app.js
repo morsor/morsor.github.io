@@ -27,7 +27,7 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider.otherwise({redirectTo: '/language/danish'});
     $locationProvider.html5Mode({
         enabled:true,
-        requireBase: false
+//        requireBase: false
     })
 });
 
