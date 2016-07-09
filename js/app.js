@@ -6,10 +6,10 @@ var app = angular.module(
 );
 
 
-app.config(function($routeProvider) {
+app.config(function($routeProvider, $locationProvider) {
     $routeProvider.when(
         '/', {
-            redirectTo: '/english'
+            redirectTo: '/language/english'
         }
     );
     $routeProvider.when(
@@ -19,12 +19,16 @@ app.config(function($routeProvider) {
         }
     );
     $routeProvider.when(
-        '/:language', {
+        '/language/:language', {
             templateUrl: '/partials/language-versioned-content.html',
             controller: LanguageVersionedContentController
         }
     );
-    $routeProvider.otherwise({redirectTo: '/danish'});
+    $routeProvider.otherwise({redirectTo: '/language/danish'});
+    $locationProvider.html5Mode({
+        enabled:true,
+        requireBase: false
+    })
 });
 
 app.filter('stretch', function() {

@@ -1,5 +1,6 @@
 'use strict';
 
+
 function SharedResourceController($scope, LocalStaticText) {
 
     $scope._ = LocalStaticText.load();
@@ -11,6 +12,7 @@ function SharedResourceController($scope, LocalStaticText) {
 var languages = new Array('danish', 'english');
 
 function LanguageVersionedContentController($scope, $location, $routeParams, DanishContent, EnglishContent) {
+    
     if ($.inArray($routeParams.language, languages) != -1) {
         $scope.language = $routeParams.language;
         if ($.inArray($routeParams.language, languages) == 0) {
@@ -28,4 +30,3 @@ function LanguageVersionedContentController($scope, $location, $routeParams, Dan
 function ErrorController($scope) {
     $scope.languages = languages;
 }
-
