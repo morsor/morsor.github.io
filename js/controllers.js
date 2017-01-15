@@ -17,7 +17,7 @@ function LanguageVersionedContentController($scope, $location, $routeParams, Dan
     
     var requestParamLanguage = $location.search()['language'];
 
-    // Order of language resolution: Request parameter, then path parameter, then default
+    // Resolves language in the order: Request parameter OR path parameter OR default
     if ($.inArray(requestParamLanguage, languages) != -1) {
         $scope.language = requestParamLanguage;
         $location.search('language', null)
@@ -27,6 +27,7 @@ function LanguageVersionedContentController($scope, $location, $routeParams, Dan
         $scope.language = defaultLanguage;
     }
 
+    // Loads language-specific assets 
     if ($scope.language == 'danish') {
         $scope.languageVersioned = DanishContent.query();
         $scope.selectableLanguage = "english";

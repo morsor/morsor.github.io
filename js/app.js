@@ -9,7 +9,7 @@ var app = angular.module(
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider.when(
         '/', {
-            redirectTo: '/language/english'
+//            redirectTo: '/language/english'
         }
     );
     $routeProvider.when(
@@ -27,7 +27,7 @@ app.config(function($routeProvider, $locationProvider) {
     $routeProvider.otherwise({redirectTo: '/language/danish'});
     $locationProvider.html5Mode({
         enabled:true,
-//        requireBase: false
+        requireBase: false
     })
 });
 
