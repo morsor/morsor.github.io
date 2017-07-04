@@ -20,7 +20,7 @@
 
     "bank" : {
         "name"      : "Saxo Privatbank",
-        "regNo"     : 9625,
+        "regNo"     : 9695,
         "accountNo" : 1263404,
         "swift"     : "BRSPDK21",
         "iban"      : "DK9496250001263404"
