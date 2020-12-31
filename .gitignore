@@ -12,7 +12,6 @@ logs
 precompiled
 tmp
 test-result
-eclipse
 server.pid
 
 # Ignore IntelliJ
