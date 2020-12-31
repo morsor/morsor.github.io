@@ -57,9 +57,9 @@ a.languageLink:hover {
 .portrait {
     border:1px solid #000000;
     float:left;
-    height:150px;
+    height:144px;
     margin: 0 10px 10px 0;
-    width:150px;
+    width:144px;
 }
 
 pre.error {
